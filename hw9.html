@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            margin: 0;
+        }
+
+        .header {
+            padding: 10px 5vh;
+            display: flex;
+        }
+
+        .header>div {
+            display: flex;
+            width: 49%;
+        }
+
+        .header>div:nth-of-type(1) {
+            justify-content: start;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+        }
+
+        li {
+            margin-left: 15px;
+        }
+
+        /**/
+        .body {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .left {
+            width: 17%;
+        }
+
+        h3 {
+            border-bottom: 1px solid black;
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        .b {
+            font-size: 20px;
+        }
+
+        .m {
+            font-size: 18px;
+        }
+
+        .lm {
+            font-size: 15px;
+        }
+
+        .l {
+            font-size: 15px;
+            font-style: italic;
+        }
+
+        .line {
+            border-top: 1px solid black;
+        }
+
+        .middle {
+            width: 57%;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .right {
+            width: 17%;
+        }
+
+        .right>img {
+            width: 10%;
+        }
+        @media screen and (max-width: 960px) {
+            .right{
+                display: none;
+            }
+        }
+        @media screen and (max-width: 560px) {
+            .right{
+                display: none;
+            }
+            .header{
+                display: block;
+            }
+            .header>div{
+                width: 100%;
+                display: inline;
+            }
+            .header>div:nth-child(2){
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .header h1{
+                text-align: center;
+            }
+            .body{
+                padding: 20px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .body>div{
+                width: 100%;
+            }
+            .left{
+                flex-grow: 100%;
+                display: block;
+                order: 2;
+            }
+            .middle{
+                flex-grow: 100%;
+                display: block;
+                order: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h1>Media</h1>
+        </div>
+        <div>
+            <ul>
+                <li>Home</li>
+                <li style="text-decoration: underline;">News</li>
+                <li>Gallery</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <div class="left">
+            <h3>Last News</h3>
+            <p class="lm">BUSINESS</p>
+            <p class="b">Consepture eos ipsam possimus</p>
+            <p class="l">by Modi Cumque</p>
+            <p class="m">Mollitia modi cumque architecto coommodi illum, conseq sed nihil error aliquam accusamus</p>
+            <p class="lm">2 HOURS AGO</p>
+            <div class="line"></div>
+            <p class="lm">ART</p>
+            <p class="b">Lorem architecto commodi illum</p>
+            <p class="l">by Timus Onihil</p>
+            <p class="m">Dolore ipsam possimus mollitia modi cumque architecto coommodi illum, consequuntur!</p>
+            <p class="lm">4 HOURS AGO</p>
+            <div class="line"></div>
+        </div>
+        <div class="middle">
+            <h2>CONSEPTUR EOS IPSAM POSSIMUS</h2>
+            <p class="l">by Modi Cumque</p>
+            <img src="images9/urbanization.jpg" alt="img">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil ipsam quas nobis placeat
+                voluptatem quisquam consequatur laboriosam tenetur excepturi laudantium, a amet, totam magni. Architecto
+                aspernatur eius nobis amet?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil ipsam quas nobis placeat
+                voluptatem quisquam consequatur laboriosam tenetur excepturi laudantium, a amet, totam magni. Architecto
+                aspernatur eius nobis amet?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil ipsam quas nobis placeat
+                voluptatem quisquam consequatur laboriosam tenetur excepturi laudantium, a amet, totam magni. Architecto
+                aspernatur eius nobis amet?</p>
+            <img src="images9/social_icons.png" alt="img" style="float:right; width:10%;">
+        </div>
+        <div class="right">
+            <h3>Osed accusamus</h3>
+            <img src="images9/unnamed.png" alt="img">
+            <p class="m">Mollitia modi cumque architecto coommodi illum, conseq sed nihil error aliquam accusamus</p>
+            <p class="l">by Modi Cumque</p>
+            <div class="line"></div>
+            <img src="images9/unnamed.png" alt="img" style="padding-top: 20px;">
+            <p class="m">Dolore ipsam possimus mollitia modi cumque architecto coommodi illum, consequuntur!</p>
+            <p class="l">by Timus Onihil</p>
+            <div class="line"></div>
+        </div>
+    </div>
+</body>
+</html>
